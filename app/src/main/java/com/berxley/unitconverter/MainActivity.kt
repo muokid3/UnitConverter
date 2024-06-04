@@ -78,7 +78,7 @@ fun UniConverter(){
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "Hello Unit Converter with jetpack compose!")
+        Text(text = "Unit Converter", style = MaterialTheme.typography.headlineLarge)
         Spacer(modifier = Modifier.height(16.dp))
         OutlinedTextField(
             value = inputValue,
@@ -198,7 +198,8 @@ fun UniConverter(){
             }
         }
         Spacer(modifier = Modifier.height(16.dp))
-        Text(text = "Result: $outputValue")
+        Text(text = "Result: $outputValue",
+            style = MaterialTheme.typography.headlineMedium)
 
     }
 }
